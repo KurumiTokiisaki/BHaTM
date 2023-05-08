@@ -29,9 +29,9 @@ section {
     align-content: center;
 }
 
-.animated {
-    width: 480px;
-    height: 270px;
+.image {
+    width: 600px;
+    height: 400px;
     background-position: center;
     background-size: cover;
     background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/simulated_bh.jpg");
