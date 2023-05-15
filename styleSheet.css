@@ -57,10 +57,19 @@ section {
     transform: translateX(0);
 }
 
-div.sticky {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  background-color: green;
-  border: 2px solid #4CAF50;
+.scroll-text {
+  position: fixed;
+  top: 0px;
+  left: -800px;
+  white-space: nowrap;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.bg-text {
+  font-size: 40rem;
+  color: rgb(122, 122, 122);
+  -webkit-text-fill-color: #272727; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(70, 70, 70);
 }

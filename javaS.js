@@ -14,3 +14,10 @@ hiddenLElements.forEach((elL) => observer.observe(elL));
 
 const hiddenRElements = document.querySelectorAll('.hiddenRight');
 hiddenRElements.forEach((elR) => observer.observe(elR));
+
+let scrollText = document.querySelector(".scroll-text");
+
+window.onscroll = () => {
+    let pos = window.scrollY;
+    scrollText.style.left =  `-${pos/2}px`;
+}
