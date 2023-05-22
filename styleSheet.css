@@ -58,18 +58,18 @@ section {
 }
 
 .scroll-text {
-  position: fixed;
-  top: 0px;
-  left: -800px;
-  white-space: nowrap;
-  z-index: -1;
-  transition: all 0.5s;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    white-space: nowrap;
+    z-index: -1;
+    transition: all 1s;
 }
 
 .bg-text {
-  font-size: 40rem;
-  color: rgb(122, 122, 122);
-  -webkit-text-fill-color: #272727; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: rgb(70, 70, 70);
+    font-size: 20rem;
+    color: rgb(122, 122, 122);
+    -webkit-text-fill-color: #272727; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(70, 70, 70);
 }

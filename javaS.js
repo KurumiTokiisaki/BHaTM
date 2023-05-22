@@ -19,5 +19,5 @@ let scrollText = document.querySelector(".scroll-text");
 
 window.onscroll = () => {
     let pos = window.scrollY;
-    scrollText.style.left =  `-${pos/2}px`;
+    scrollText.style.left =  `-${pos/1}px`;
 }
