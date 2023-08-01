@@ -5,6 +5,7 @@ a {
 h1 {
     padding: 30px;
     text-align: center;
+    align-self: center;
     border: 5px solid black;
     border-radius: 25px;
 }
@@ -34,7 +35,6 @@ section {
     height: 400px;
     background-position: center;
     background-size: cover;
-    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/simulated_bh.jpg");
 }
 
 .hiddenLeft {
@@ -69,7 +69,81 @@ section {
 .bg-text {
     font-size: 20rem;
     color: rgb(122, 122, 122);
-    -webkit-text-fill-color: #272727; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: #272727;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(70, 70, 70);
+}
+
+/* Below taken from https://blog.stackfindover.com/css-glowing-text-effect/#:~:text=How%20To%20Create%20a%20Glowing,add%20the%20repeatedly%20glowing%20effect.&text=We%20can%20also%20use%20text,animation%20to%20create%20glowing%20text. Need to add my own.*/
+.glowing-text {
+  color: #0;
+  text-align: center;
+  -webkit-animation: glowing-text 1s ease-in-out infinite alternate;
+  -moz-animation: glowing-text 1s ease-in-out infinite alternate;
+  animation: glowing-text 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowing-text {
+  0% {
+    text-shadow: 0 0 10px #FDB813, 0 0 20px #FDB813;
+}
+
+  100% {
+    text-shadow: 0 0 20px #FFF, 0 0 30px #FDB813;
+  }
+}
+
+.rainbow-glowing-text {
+  color: #0;
+  text-align: center;
+  -webkit-animation: rainbow-glowing-text 1s ease-in-out infinite alternate;
+  -moz-animation: rainbow-glowing-text 1s ease-in-out infinite alternate;
+  animation: rainbow-glowing-text 1s ease-in-out infinite alternate;
+}
+
+.glowing-text-blue {
+  color: #0;
+  text-align: center;
+  -webkit-animation: glowing-text-blue 1s ease-in-out infinite alternate;
+  -moz-animation: glowing-text-blue 1s ease-in-out infinite alternate;
+  animation: glowing-text-blue 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes rainbow-glowing-text {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #2e00e6, 0 0 20px #6300e6, 0 0 25px #c300e6, 0 0 30px #e200e6, 0 0 35px #e600ca;
+}
+
+  100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #ff4da6, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6;
+  }
+}
+
+@-webkit-keyframes glowing-text-blue {
+  0% {
+    text-shadow: 0 0 10px #0;
+    text-shadow: 0 0 1px #827CFF, 0 0 2px #6A63FF, 0 0 3px #544CFF, 0 0 4px #3D34FF, 0 0 5px #2C22FF, 0 0 6px #1E13FF, 0 0 7px #0C00FF;
+}
+
+  100% {
+    text-shadow: 0 0 1px #0C00FF;, 0 0 3px #1E13FF, 0 0 5px #2C22FF, 0 0 7px #3D34FF, 0 0 9px #544CFF, 0 0 11px #6A63FF, 0 0 13px #827CFF;
+  }
+}
+
+.black-glowing-text {
+  color: #0;
+  text-align: center;
+  -webkit-animation: black-glowing-text 1s ease-in-out infinite alternate;
+  -moz-animation: black-glowing-text 1s ease-in-out infinite alternate;
+  animation: black-glowing-text 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes black-glowing-text {
+  0% {
+    text-shadow: 0 0 10px #0;
+}
+
+  100% {
+    text-shadow: 0 0 20px #fff;
+  }
 }
