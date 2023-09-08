@@ -2,12 +2,22 @@ a {
     background: black;
 }
 
+p {
+    color: white;
+}
+
 h1 {
     padding: 30px;
     text-align: center;
     align-self: center;
-    border: 5px solid black;
+    border: 5px solid white;
     border-radius: 25px;
+    color: white;
+}
+
+ul {
+    font-size: 30px;
+    color: white;
 }
 
 h2 {
@@ -15,7 +25,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid white;
+    color: white;
 }
 
 .container {
@@ -74,7 +85,7 @@ section {
     -webkit-text-stroke-color: rgb(70, 70, 70);
 }
 
-/* Below taken from https://blog.stackfindover.com/css-glowing-text-effect/#:~:text=How%20To%20Create%20a%20Glowing,add%20the%20repeatedly%20glowing%20effect.&text=We%20can%20also%20use%20text,animation%20to%20create%20glowing%20text. Need to add my own.*/
+/* glowing text from https://blog.stackfindover.com/css-glowing-text-effect/#:~:text=How%20To%20Create%20a%20Glowing,add%20the%20repeatedly%20glowing%20effect.&text=We%20can%20also%20use%20text,animation%20to%20create%20glowing%20text. Need to add my own.*/
 .glowing-text {
   color: #0;
   text-align: center;
@@ -111,17 +122,17 @@ section {
 
 @-webkit-keyframes rainbow-glowing-text {
   0% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #2e00e6, 0 0 20px #6300e6, 0 0 25px #c300e6, 0 0 30px #e200e6, 0 0 35px #e600ca;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #2e00e6, 0 0 4px #6300e6, 0 0 5px #c300e6, 0 0 6px #e200e6, 0 0 7px #e600ca;
 }
 
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #ff4da6, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6;
+    text-shadow: 0 0 1px #fff, 0 0 2px #ff4da6, 0 0 3px #ff4da6, 0 0 4px #ff4da6, 0 0 5px #ff4da6, 0 0 6px #ff4da6, 0 0 7px #ff4da6;
   }
 }
 
 @-webkit-keyframes glowing-text-blue {
   0% {
-    text-shadow: 0 0 10px #0;
+    text-shadow: 0 0 10px #0C00FF;
     text-shadow: 0 0 1px #827CFF, 0 0 2px #6A63FF, 0 0 3px #544CFF, 0 0 4px #3D34FF, 0 0 5px #2C22FF, 0 0 6px #1E13FF, 0 0 7px #0C00FF;
 }
 
