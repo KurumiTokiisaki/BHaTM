@@ -9,4 +9,4 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-alert("Please make sure your window size is 1080p"!);
+window.alert("Please make sure your window size is 1080p"!);
