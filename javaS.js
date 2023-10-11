@@ -24,14 +24,14 @@ window.onscroll = () => {
 
 // Function to check if the window size is not 1080p
 function isNot1080p() {
-  return 1900 < window.innerWidth < 1940;
+  return window.innerWidth < 1940;
 }
 
 // Function to create the popup
 function createPopup() {
   // Create the popup element
   var popup = document.createElement('div');
-  popup.textContent = 'Your window size is not 1080p!';
+  popup.textContent = 'Your window size is not 1080p! Please change to 1080p.';
 
   // Style the popup
   popup.style.position = 'fixed';
