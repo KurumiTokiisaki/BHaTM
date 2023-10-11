@@ -1,3 +1,5 @@
+window.alert("Please make sure your window size is 1080p"!);
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -8,5 +10,3 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 });
-
-window.alert("Please make sure your window size is 1080p"!);
